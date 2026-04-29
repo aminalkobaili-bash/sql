@@ -1,0 +1,1 @@
+select (select name from person WHERE id = person_id) , CASE WHEN (select name from person WHERE id = person_id) = 'Denis' THEN true ELSE false END as check_name from person_order WHERE ( menu_id = 13 OR menu_id = 14 OR menu_id = 18 ) AND (order_date = '2022-01-07');

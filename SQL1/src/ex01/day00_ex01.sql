@@ -1,0 +1,1 @@
+select name , age from person where gender = 'female' AND  lower(address) = 'kazan' ORDER BY name;
