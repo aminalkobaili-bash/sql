@@ -1,0 +1,1 @@
+select order_date as action_date , person_id from person_order INTERSECT ALL select visit_date , person_id from person_visits ORDER BY action_date , person_id DESC;

@@ -1,0 +1,1 @@
+select po.order_date , p.name || ' (age:' || p.age || ')' as person_information from (select order_date , person_id as id from person_order) po NATURAL JOIN person p ORDER BY order_date , person_information;
